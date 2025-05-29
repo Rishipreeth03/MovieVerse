@@ -1,17 +1,40 @@
-# React + Vite
+# 🎬 MovieVerse
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fast, modern movie search app built with **React + Vite**, leveraging **Appwrite** for backend services and optimized search performance using **debouncing**.
 
-Currently, two official plugins are available:
+Live Demo: 👉 [movieverse-iyyp.onrender.com](https://movieverse-iyyp.onrender.com)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🔍 **Search Movies Instantly** – Search is optimized using the `use-debounce` hook to reduce unnecessary API calls while typing.
+- 🔥 **Trending Movies Section** – View popular and trending movie data fetched via The Movie Database (TMDb) API.
+- ⚡ **Built with Vite** – Super fast development experience and optimized builds.
+- 📦 **No Backend Code Required** – All backend services like data storage and analytics are handled by **Appwrite**.
+- 🖼️ **Beautiful UI** – Clean, responsive design with helpful visual feedback like spinners and error handling.
+- 🔐 **API Integration** – Utilizes TMDb for rich movie data including posters, descriptions, and popularity metrics.
 
+---
 
-#  using debounce npm for optimising the search
-## using appwrite so that backend is not written 
-it simplifies the task 
+## 🛠️ Tech Stack
+
+- **Frontend**: React, Vite, Tailwind CSS
+- **Backend-as-a-Service**: Appwrite (for trending data, analytics, etc.)
+- **APIs**: The Movie Database (TMDb)
+- **Optimizations**: `use-debounce` from [`react-use`](https://github.com/streamich/react-use) to prevent excessive API requests during search input and many more..
+
+---
+
+## 📦 Installation
+
+```bash
+# Clone the repo
+git clone https://github.com/your-username/movieverse.git
+cd movieverse
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
